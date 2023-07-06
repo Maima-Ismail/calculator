@@ -5,6 +5,6 @@ const CButton = ({ id, className, onClick, value }) => {
       {value}
     </button>
     // </div>
-  );
-};
-export default CButton;
+  )
+}
+export default CButton

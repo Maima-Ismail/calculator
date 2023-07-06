@@ -23,7 +23,7 @@ input {
   border: none;
   background-color: rgb(145, 145, 145);
   color: aliceblue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.5rem; /* Adjust the font size to your preference */
   font-weight: 200;
   text-align: right;
