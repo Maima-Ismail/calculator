@@ -22,12 +22,17 @@ const Calculator = () => {
   const calculate = () => {
     try {
       if (result) {
-        setResult((prevResult) => eval(prevResult).toString())
+        const calculatedResult = eval(result)
+        if (Number.isNaN(calculatedResult)) {
+          throw new Error('Invalid calculation')
+        }
+        setResult(calculatedResult.toString())
       }
     } catch (error) {
       setResult('Error')
     }
   }
+
   const buttons = getButtons(clear, handleDelete, handleClick, calculate)
 
   return (
